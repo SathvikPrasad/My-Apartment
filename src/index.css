@@ -1,13 +1,214 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2f303a;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.loginemail {
+  text-align: center;
+}
+.nav {
+  background-color: #2f303a;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+nav {
+  background-color: #2f303a;
+}
+.logo {
+  font-size: larger;
+}
+.signin-container {
+  background-color: #202027;
+  padding: 20px;
+  border-radius: 20px;
+}
+.myapartment-text {
+  text-align: center;
+}
+.submit-button {
+  text-align: center;
+  margin: 20px;
+}
+.signinorsignup {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+/* ************Home************* */
+.inactive {
+  background-color: #2f303a;
+  color: white;
+  margin: 5px;
+  width: 100px;
+}
+.active {
+  background-color: #3d5afe;
+}
+
+.floorscontainer {
+  width: 90%;
+}
+.scrollableContainer {
+  width: 100%;
+  height: 70vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.scrollableContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrollableContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.scrollableContainer::-webkit-scrollbar-thumb {
+  background: #3d5afe;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollableContainer::-webkit-scrollbar-thumb:hover {
+  background: #3d5afe;
+}
+.saveButton {
+  max-width: 88%;
+  margin-top: 10px;
+  text-align: center;
+}
+/* ************************** */
+/* ***************expenses************* */
+.expensescontainer {
+  background-color: #202027;
+  padding: 30px;
+
+  border-radius: 10px;
+}
+
+/* ************************************ */
+
+/* *******************navbar */
+@media only screen and (max-width: 760px) {
+  .logo {
+    text-align: start;
+    font-size: small;
+  }
+  .lis {
+    font-size: small;
+  }
+}
+/* **************************************** */
+
+.nav {
+  top: 0;
+  position: fixed;
+  background: rgba(32, 32, 39, 0.5);
+  box-shadow: none;
+  z-index: 1;
+}
+
+ul .btn,
+.login {
+  margin: 10px;
+  border-radius: 10px;
+}
+.mainsvg {
+  width: 70%;
+  height: 30%;
+  margin-top: 50px;
+  position: relative;
+  animation: mymove 2s;
+}
+.expensesvg {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 50px;
+  position: relative;
+  animation: second 2s;
+}
+.statussvg {
+  border-radius: 20px;
+  margin-top: 50px;
+  position: relative;
+  animation: third 2s;
+}
+.maincontainer {
+  /* background-color: aliceblue; */
+  max-width: 80%;
+}
+.container .titletext {
+  font-size: 300%;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+}
+
+.expense-text {
+  margin-top: 20%;
+  font-size: large;
+}
+
+.third {
+  margin-top: 50px;
+  height: 20%;
+}
+
+@keyframes mymove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes second {
+  from {
+    right: -40px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@keyframes third {
+  from {
+    left: -40px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+  .expense-text {
+    margin-top: 18%;
+    font-size: medium;
+  }
+  .container .titletext {
+    font-size: 100%;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+  }
+  .logo {
+    font-size: small;
+  }
+  .myapartment-text,
+  .tetxtitle {
+    font-size: 35px;
+  }
+  .third {
+    margin-top: 5px;
+  }
 }
